@@ -1,26 +1,26 @@
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String args[]) {
-        String question = "";
-        String choiceOne = "";
-        String choiceTwo = "";
-        String choiceThree = "";
 
-        String correctAnswer = choiceTwo;
+        String question = "which is the smaller number";
+        String choiceOne = "800";
+        String choiceTwo = "700";
+        String choiceThree = "4663";
 
-        // Write a print statement asking the question
-        // Write a print statement giving the answer choices
+        System.out.println(question);
+        System.out.println("1. "+choiceOne +" or 2. "+choiceTwo+" or 3. "+ choiceThree);
 
-        // Have the user input an answer
-        // Retrieve the user's input
+        Scanner input = new Scanner(System.in);
+        String uInput = input.next();
 
-        // If the user's input matches the correctAnswer...
-        // then the user is correct and we want to print out a congrats message to the user.
+        while(!uInput.equals("2")){
+            System.out.println("incorrect; try again");
+            uInput = input.next();
+        }
 
-        // If the user's input does not match the correctAnswer...
-        // then the user is incorrect and we want to print out a message saying that the user is incorrect as well as what the correct choice was.
-
+        System.out.println("correct");
     }
 
 }
