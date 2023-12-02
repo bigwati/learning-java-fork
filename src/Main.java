@@ -1,19 +1,13 @@
 public class Main {
 
     public static void main(String[] args) {
-        Triangle triangleA = new Triangle(15, 8, 15, 8, 17);
-        Triangle triangleB = new Triangle(3, 2.598, 3, 3,3);
+        Student studentA = new Student("Paweł", "Malinowski", 2018, 3.5, "physics");
+        Student studentB = new Student("Michał", "Grzybiarz", 2022, 4.0, "math");
 
-        double triangleAArea = triangleA.findArea();
-        System.out.println(triangleAArea);
+        double studentAYearOfGraduate = studentA.graduateYearInc();
+        System.out.println(studentAYearOfGraduate);
 
-        double triangleBArea = triangleB.findArea();
-        System.out.println(triangleBArea);
 
-        System.out.println(triangleA.sideLenThree);
-        System.out.println(triangleB.base);
-
-        System.out.println(Triangle.numOfSides);
 
     }
 
