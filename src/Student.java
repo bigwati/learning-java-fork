@@ -17,6 +17,7 @@ public class Student {
     }
 
     public int graduateYearInc() {
-        return this.yearOfGraduate+1;
+        this.yearOfGraduate=this.yearOfGraduate+1;
+        return this.yearOfGraduate;
     }
 }
